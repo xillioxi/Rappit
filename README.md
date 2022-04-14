@@ -14,13 +14,14 @@ The All-In-One Data Exchange Hub Across The World & Metaverse
 
 <table>
   <tr>
-	  <td>Metaverse</td>
-	  <td>Frontend</td>
-	  <td>backend</td>
+	  <td>Metaverse - Roblox</td>
+	  <td>Frontend - React</td>
+	  <td>Backend - Python Flask</td>
   </tr>
   <tr>
-	  <td valign="top"><img src="prototypes/roblox.png">
-
+	  <td valign="middle"><img src="prototypes/roblox.png">
+	  <td valign="middle"><img src="prototypes/react.png" width="1200" height="180">
+	  <td valign="middle"><img src="prototypes/flask.png">
 </table>
 
 
@@ -55,15 +56,19 @@ The All-In-One Data Exchange Hub Across The World & Metaverse
 <img src="prototypes/features.png">
 	
 ## UI Design Prototype
-You can see the prototype created by Figma here
+	
+Prototype created by Figma here:
   
 https://www.figma.com/file/BR45q2QY2ViAaMXsOhp159Nc/Rappit?node-id=0%3A1
   
 ## Preproject brainstorm
-Here is our preproject brainstorm
+	
+Preproject brainstorm here:
   
 
-## Video
+## Demonstation Video
+	
+Demonstration Video here:
   
 
  
