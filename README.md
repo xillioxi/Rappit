@@ -57,8 +57,10 @@ The All-In-One Data Exchange Hub Across The World & Metaverse
 
 ## Showcase
 
-[![Click Here!](/prototypes/client.png)](https://www.youtube.com/watch?v=OEHn7vauGBo)	
-	
+Client View in Roblox: https://www.youtube.com/watch?v=OEHn7vauGBo
+
+Business View in Rappit: https://www.youtube.com/embed/fYaiNyJ6roM?start=106&end=115
+
 ## UI Design Prototype
 	
 Prototype created by Figma here:
@@ -75,7 +77,7 @@ https://www.figma.com/file/BR45q2QY2ViAaMXsOhp159Nc/Rappit?node-id=0%3A1
 	
 Demonstration Video here:
 
-[![Click Here!](/prototypes/company.png)](https://www.youtube.com/watch?v=OEHn7vauGBo)
+https://www.youtube.com/watch?v=fYaiNyJ6roM
 
 ## Idea In General
 
