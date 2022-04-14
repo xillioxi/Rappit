@@ -1,6 +1,6 @@
 # Rappit
 
-<img src="prototypes/Navy_Logo.png" width="250" height="250" >
+<img src="prototypes/Navy_Logo_2.png" width="250" height="250" >
 
 The All-In-One Data Exchange Hub Across The World & Metaverse 
 
