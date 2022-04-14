@@ -14,9 +14,52 @@ import Check from "./images/check.svg"
 import Mail from './images/Mail.png'
 import Emoji from './images/Emoji.png'
 import Send from './images/Send.png'
+import Avatar from './images/Avatar.png'
+import React, {useEffect, useState}  from 'react'
+
+//Receive the data by making XHTTPrequest and find the closest one
+
 // Do the CSS here import the CSS here
 
 function App() {
+  const [messages, editmessage] = useState([
+    {direction:"left",customer:"Rixky",message:"Hello My name is Ricky.",time:"11:37AM" },
+    
+    {direction:"left",customer:"Rixky",message:"How much is the sport shoe nft?",time:"11:40AM"},
+    
+    {direction:"right",message:"10 ETH and what is ur size?",time:"11:44AM"},
+
+
+  ]);
+  const [num,setnum] = useState(0)
+
+  const fakemessage = [
+
+  ]
+  //useEffect(()=>{start()},[])
+
+  function start(){
+    console.log("here");
+    setInterval(()=>{
+      console.log(num); 
+      editmessage(messag => [...messag, fakemessage[num]]);
+      const n2 = num+1;
+      setnum(n2); 
+    },2000)
+  }
+  //Every 10 second make a request to backend to see if there is new data coming in?
+  /*
+  function requestInformation(){
+    = await fetch(url, {
+       method: 'GET',
+       mode: 'cors',
+       cache: 'no-cache',
+       headers:{     
+          'Content-Type': 'application/json'
+      }
+     })
+  }
+*/
   return (
     <>
       <NavBar/>  
@@ -25,7 +68,7 @@ function App() {
       <Search/>
       <CustomerSelection/>
       <BusinessProfile/>
-      <ClientChat/>
+      <ClientChat message = {messages} />
     </>
   )
 }
@@ -73,25 +116,6 @@ function CustomerSelection(){
   <div id="CustomerSelection">
     <Customer class="std_button selected_customer"/>
     <Customer class="std_button"/>
-    <Customer class="std_button"/> 
-    <Customer class="std_button"/> 
-
-    <Customer class="std_button"/> 
-
-    <Customer class="std_button"/> 
-
-    <Customer class="std_button"/> 
-
-    <Customer class="std_button"/> 
-
-    <Customer class="std_button"/> 
-
-    <Customer class="std_button"/> 
-
-    <Customer class="std_button"/> 
-
-    <Customer class="std_button"/> 
-
   </div>
   )
 }
@@ -101,7 +125,7 @@ function Customer(props){
     <div id="Customer" class={props.class}>
       <img src={Customer1} id="customericon"></img>
       <img src={Customer1Device} id="platformicon"></img>
-      <h6>0xEric32</h6>
+      <h6>Rixky</h6>
       <p>How to get WL for Bieber concert?</p>
     </div> 
   )
@@ -110,21 +134,21 @@ function Customer(props){
 function BusinessProfile(){
   return(
     <div id="business" class="std_button" >
-      <img src={Customer1} id="businessicon"></img>
+      <img src={Avatar} id="businessicon"></img>
       <img src={Customer1Device} id="businessdevice"></img>
-      <h6>0xEric32</h6>
+      <h6>Kevin</h6>
       <p>How to get WL for Bieber concert?</p>
     </div> 
   )
 }
 
-function ClientChat(){
+function ClientChat(props){
   return(
     <div id="client" class="std_button" >
       <img src={Customer1} id="clienticon"></img>
       <img src={Customer1Device} id="clientdevice"></img>
-      <h6>0xEric32</h6>
-      <p class="last_seen">last seen 45 minutes ago</p>
+      <h6>Rixky</h6>
+      <p class="last_seen">last seen a minutes ago</p>
       <img src={Kebab} id="selection_icon"></img>
       <div id="chat_selection_chat_option">
         <h3 class="chat_option selected">Messages</h3>
@@ -135,7 +159,7 @@ function ClientChat(){
       <p id="chat_date">28/2/2022</p>
       {/*Chat Messages*/}
       <div id="chat_messages">
-        
+        {/*
         <div class="wrapper"> 
           <div class="chat_message right_sided" >
           <div class="message_right_sided">
@@ -150,7 +174,7 @@ function ClientChat(){
 
         <div class="wrapper">
           <div class="chat_message left_sided" >
-            <p>0xEric32</p>
+            <p>Rixky</p>
             <div class="message_left_sided">
               <p>You can enter the WL waffle through the following instruction</p>
               <p>Click to view</p>
@@ -162,6 +186,10 @@ function ClientChat(){
             </div>
           </div>
         </div>
+  */}
+
+      {props.message.map((message)=><Message message = {message} direction = {message.direction}/>)}
+
       </div>
       <div id="send_message">
         <div class="flex_left" id="message_bar">
@@ -173,6 +201,52 @@ function ClientChat(){
       </div>
 
     </div> 
+  )
+}
+
+function Message(props){
+  if(props.direction == "left"){
+    return (
+      <Left_user_message content = {props.message}/>
+    )
+  }else{
+    return(
+      <Right_user_message content = {props.message}/>
+    )
+  }
+}
+
+function Left_user_message(props){
+  return(
+<div class="wrapper">
+  <div class="chat_message left_sided" >
+    <p>{props.content.customer}</p>
+    <div class="message_left_sided">
+      <p>{props.content.message}</p>
+    </div>
+    <br/>
+    <div class="flex">
+      <p class="time_left">{props.content.time}</p>
+      <img class="checksign" src={Check}></img> 
+    </div>
+  </div>
+</div>
+  )
+}
+
+function Right_user_message(props){
+  return(
+<div class="wrapper"> 
+  <div class="chat_message right_sided" >
+  <div class="message_right_sided">
+      <p>{props.content.message}</p>
+  </div>
+  <div class="flex">
+    <p class="time_right">{props.content.time}</p>
+    <img class="checksign" src={Check}></img>
+  </div>
+  </div>  
+</div>
   )
 }
 

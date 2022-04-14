@@ -165,7 +165,7 @@ body,html{
   display:inline-block;
   position:relative;
   top:-20px;
-  left:-20px;   
+  left:15px;   
   font-size:14px;
 }
 
@@ -227,7 +227,7 @@ body,html{
   display:inline-block;
   position:relative;
   top:-20px;
-  left:-30px;   
+  left:30px;   
   font-size:14px;
 }
 
@@ -237,12 +237,13 @@ body,html{
   margin-bottom:15px;
   top:180px;
   left:663px;
-  min-height:calc(100% - 250px);
+  height:calc(100% - 250px);
   padding-left:20px;
   padding-right:20px;
   padding-top:10px;
   padding-bottom:10px;
   position:absolute;
+  overflow:scroll;
 }
 
 #clienticon{
@@ -275,7 +276,7 @@ body,html{
   display:inline-block;
   position:relative;
   top:-20px;
-  left:-20px;   
+  left:20px;   
   font-size:14px;
 }
 
@@ -321,6 +322,7 @@ body,html{
 #chat_messages{
   overflow:scroll;
   overflow-x:hidden;
+  height:570px;
 }
 
 .chat_message{
@@ -426,6 +428,5 @@ body,html{
   display: flex;
   justify-content: center;
   height: 20px;
-
   color: #666668;
 }
