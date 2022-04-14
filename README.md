@@ -4,6 +4,32 @@
 
 The All-In-One Data Exchange Hub Across The World & Metaverse 
 
+<table>
+  <tr>
+	  <td>Design User Interface 1</td>
+	  <td>Design User Interface 2</td>
+  </tr>
+  <tr>
+	  <td valign="top"><img src="prototypes/chat.png">
+	  <td valign="top"><img src="prototypes/Metaverse.png" >
+</table>
+
+
+
+<table>
+  <tr>
+	 <td>New generation of platform </td>
+	 <td>Centralised Metaverse Twins</td>
+	 <td>All-in-One e-Marketing Platform</td>
+	 
+  </tr>
+  <tr>
+    <td valign="top"><img src="prototypes/budget1.png" ></td>
+    <td valign="top"><img src="prototypes/budget2.png" ></td>
+    <td valign="top"><img src="prototypes/budget3.png" ></td>
+  </tr>
+<table>
+
 -------------------------------------------------------
 You can see the prototype created by Figma here
   
