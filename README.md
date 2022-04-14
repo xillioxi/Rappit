@@ -20,7 +20,7 @@ The All-In-One Data Exchange Hub Across The World & Metaverse
   </tr>
   <tr>
 	  <td valign="middle"><img src="prototypes/roblox.png">
-	  <td valign="middle"><img src="prototypes/react.png" width="1200" height="180">
+	  <td valign="middle"><img src="prototypes/react.png">
 	  <td valign="middle"><img src="prototypes/flask.png">
 </table>
 
