@@ -6,6 +6,19 @@ The All-In-One Data Exchange Hub Across The World & Metaverse
 
 <table>
   <tr>
+	 <td>Design User Interface 1</td>
+	 <td>Design User Interface 2</td>
+  </tr>
+  <tr>
+	 <td valign="top"><img src="prototypes/nft.png" >
+	 <td valign="top"><img src="prototypes/chat.png" >
+  </tr>
+</table>
+
+
+
+<table>
+  <tr>
 	 <td>Features 1</td>
 	 <td>Features 2</td>
 	 <td>Features 3</td>
