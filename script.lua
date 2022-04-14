@@ -92,12 +92,82 @@ game.Players.PlayerAdded:Connect(function(player)
 			--}
 			--local sentdata =HttpService:JSONEncode(data)
  
-			local response = HttpService:PostAsync("{Receiver IP:Port}",data, Enum.HttpContentType.ApplicationJson, false)
+	   	local response = HttpService:PostAsync("{Receiver IP:Port}",data, Enum.HttpContentType.ApplicationJson, false)
 		end
 	)
 	
 end)
 
+
+
+
+-- Parse the JSON response
+
+
+local part = Instance.new("Part")
+part.Anchored = true
+part.Parent = workspace
+local ChatService = game:GetService("Chat")
+
+local function Chat(name, msg)
+	local speaker = ChatService:GetSpeaker(name)
+	if not speaker then
+		return
+	end
+	speaker:SayMessage(msg, "All", {})
+end
+
+
+local Chat = game:GetService('Chat')
+local Players = game:GetService('Players')
+local ServerScriptService = game:GetService('ServerScriptService')
+
+local ChatServiceRunner = ServerScriptService:WaitForChild('ChatServiceRunner')
+local ChatService = require(ChatServiceRunner.ChatService)
+print(1)
+Chat.Chatted:Connect(function(adornee, message)
+	print(2)
+	-- Assuming adornee is a character head
+	local player = Players:GetPlayerFromCharacter(adornee.Parent)
+	if player then
+		local speaker = ChatService:GetSpeaker(player.Name)
+		if speaker then
+			speaker:SayMessage(message, 'All', {})
+		end
+	end
+end)
+print(3)
+workspace:WaitForChild("rickykongcoder")
+print(4)
+
+local HttpService = game:GetService("HttpService")
+
+
+-- Make the request to our endpoint URL
+
+-- Parse the JSON response
+local function getPlayerFromName(name)
+	for _, player in pairs(game:GetService("Players"):GetPlayers()) do
+		if player.Name == name then
+			return player
+		end
+	end
+end
+while true do
+	--local response = HttpService:GetAsync("{Receiver IP}")
+	-- Parse the JSON response
+	local response = HttpService:GetAsync('{Receiver url}')
+	local data = HttpService:JSONDecode(response)
+	Chat:Chat(getPlayerFromName(data.usernmae).Character.Head ,data.message)
+    wait(7)
+end
+--while true do
+--	--game.Players:Chat("Hello world") 
+--	print("writing message")
+--	Chat("rickykongcoder","hello ");
+
+--	wait(1)
+--end
 
 
 
