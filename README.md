@@ -57,7 +57,7 @@ The All-In-One Data Exchange Hub Across The World & Metaverse
 
 ## Showcase
 
-[![Click Here!](/prototypes/Helene.png)](https://www.youtube.com/watch?v=OEHn7vauGBo)	
+[![Click Here!](/prototypes/client.png)](https://www.youtube.com/watch?v=OEHn7vauGBo)	
 	
 ## UI Design Prototype
 	
@@ -75,8 +75,7 @@ https://www.figma.com/file/BR45q2QY2ViAaMXsOhp159Nc/Rappit?node-id=0%3A1
 	
 Demonstration Video here:
 
-
-
+[![Click Here!](/prototypes/company.png)](https://www.youtube.com/watch?v=OEHn7vauGBo)
 
 ## Idea In General
 
