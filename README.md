@@ -59,18 +59,21 @@ The All-In-One Data Exchange Hub Across The World & Metaverse
 	
 Prototype created by Figma here:
   
-https://www.figma.com/file/BR45q2QY2ViAaMXsOhp159Nc/Rappit?node-id=0%3A1
+https://www.figma.com/file/xAYU3f60DOKEqnng3QIKs0/UI?node-id=0%3A1
   
 ## Preproject brainstorm
 	
 Preproject brainstorm here:
   
+https://www.figma.com/file/BR45q2QY2ViAaMXsOhp159Nc/Rappit?node-id=0%3A1
 
 ## Demonstation Video
 	
 Demonstration Video here:
-  
 
- 
-  
- 
+www.youtube.com
+
+## Idea In General
+
+Powerpoint here:
+  https://docs.google.com/presentation/d/1l8v45GcObOTRRHviZaKyBL6G_FLayuPiRhx6TN0350M/edit?usp=sharing
