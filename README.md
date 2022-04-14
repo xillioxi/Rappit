@@ -1,9 +1,30 @@
-# Rappit
+# Rappit 
 
 <img src="prototypes/Navy_Logo_2.png" width="250" height="250" >
 
 The All-In-One Data Exchange Hub Across The World & Metaverse 
 
+## Goal
+               
+- Connect between Metaverse and Real World for Customer Services
+- Provide Metaverse/ Platform Supports
+- Provide Tools for brand new market channel
+
+## Project Structure
+
+<table>
+  <tr>
+	  <td>Metaverse</td>
+	  <td>Frontend</td>
+	  <td>backend</td>
+  </tr>
+  <tr>
+	  <td valign="top"><img src="prototypes/roblox.png">
+
+</table>
+
+
+## Design
 <table>
   <tr>
 	  <td>Design User Interface 1</td>
@@ -30,18 +51,21 @@ The All-In-One Data Exchange Hub Across The World & Metaverse
   </tr>
 <table>
 
--------------------------------------------------------
+## Proposed Features
+<img src="prototypes/features.png">
+	
+## UI Design Prototype
 You can see the prototype created by Figma here
   
 https://www.figma.com/file/BR45q2QY2ViAaMXsOhp159Nc/Rappit?node-id=0%3A1
   
--------------------------------------------------------
-Here is out preproject brainstorm
+## Preproject brainstorm
+Here is our preproject brainstorm
   
--------------------------------------------------------
-Here is the video we made!
+
+## Video
   
--------------------------------------------------------
+
  
   
  
