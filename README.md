@@ -70,8 +70,9 @@ https://www.figma.com/file/BR45q2QY2ViAaMXsOhp159Nc/Rappit?node-id=0%3A1
 ## Demonstation Video
 	
 Demonstration Video here:
+	
+[![Click Here!](https://raw.githubusercontent.com/xillioxi/Rappit/main/prototypes/youtube.jpeg)](https://www.youtube.com/watch?v=OEHn7vauGBo)
 
-www.youtube.com
 
 ## Idea In General
 
