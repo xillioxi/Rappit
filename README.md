@@ -57,9 +57,9 @@ The All-In-One Data Exchange Hub Across The World & Metaverse
 
 ## Showcase
 
-Client View in Roblox: https://www.youtube.com/watch?v=OEHn7vauGBo
+Client View in Roblox: https://www.youtube.com/embed/fYaiNyJ6roM?start=99&end=105
 
-Business View in Rappit: https://www.youtube.com/embed/fYaiNyJ6roM?start=106&end=115
+Business View in Rappit: https://www.youtube.com/embed/fYaiNyJ6roM?start=106&end=116
 
 ## UI Design Prototype
 	
