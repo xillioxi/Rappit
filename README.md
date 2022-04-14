@@ -18,9 +18,9 @@ The All-In-One Data Exchange Hub Across The World & Metaverse
 
 <table>
   <tr>
-	 <td>Features 1</td>
-	 <td>Features 2</td>
-	 <td>Features 3</td>
+	 <td>New generation of platform </td>
+	 <td>Centralised Metaverse Twins</td>
+	 <td>All-in-One e-Marketing Platform</td>
 	 
   </tr>
   <tr>
