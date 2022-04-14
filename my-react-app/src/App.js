@@ -9,6 +9,11 @@ import belllogo from './images/Bell.png'
 import search from './images/search.svg'
 import Customer1 from "./images/Customer1.png"
 import Customer1Device from "./images/Customer1Device.png"
+import Kebab from "./images/kebab-horizontal.png"
+import Check from "./images/check.svg"
+import Mail from './images/Mail.png'
+import Emoji from './images/Emoji.png'
+import Send from './images/Send.png'
 // Do the CSS here import the CSS here
 
 function App() {
@@ -66,16 +71,34 @@ function Search(){
 function CustomerSelection(){
   return(
   <div id="CustomerSelection">
-    <Customer/>
-    <Customer/>
-    <Customer/> 
+    <Customer class="std_button selected_customer"/>
+    <Customer class="std_button"/>
+    <Customer class="std_button"/> 
+    <Customer class="std_button"/> 
+
+    <Customer class="std_button"/> 
+
+    <Customer class="std_button"/> 
+
+    <Customer class="std_button"/> 
+
+    <Customer class="std_button"/> 
+
+    <Customer class="std_button"/> 
+
+    <Customer class="std_button"/> 
+
+    <Customer class="std_button"/> 
+
+    <Customer class="std_button"/> 
+
   </div>
   )
 }
 
-function Customer(){
+function Customer(props){
   return(
-    <div id="Customer" class="std_button">
+    <div id="Customer" class={props.class}>
       <img src={Customer1} id="customericon"></img>
       <img src={Customer1Device} id="platformicon"></img>
       <h6>0xEric32</h6>
@@ -101,7 +124,54 @@ function ClientChat(){
       <img src={Customer1} id="clienticon"></img>
       <img src={Customer1Device} id="clientdevice"></img>
       <h6>0xEric32</h6>
-      <p>How to get WL for Bieber concert?</p>
+      <p class="last_seen">last seen 45 minutes ago</p>
+      <img src={Kebab} id="selection_icon"></img>
+      <div id="chat_selection_chat_option">
+        <h3 class="chat_option selected">Messages</h3>
+        <h3 class="chat_option">Sales Log</h3>
+        <h3 class="chat_option">Info</h3>
+      </div>
+      <div id="breakline"></div>
+      <p id="chat_date">28/2/2022</p>
+      {/*Chat Messages*/}
+      <div id="chat_messages">
+        
+        <div class="wrapper"> 
+          <div class="chat_message right_sided" >
+          <div class="message_right_sided">
+              <p>Hi OxEric32</p>
+          </div>
+          <div class="flex">
+            <p class="time_right">11:31AM</p>
+            <img class="checksign" src={Check}></img>
+          </div>
+          </div>  
+        </div>
+
+        <div class="wrapper">
+          <div class="chat_message left_sided" >
+            <p>0xEric32</p>
+            <div class="message_left_sided">
+              <p>You can enter the WL waffle through the following instruction</p>
+              <p>Click to view</p>
+            </div>
+            <br/>
+            <div class="flex">
+              <p class="time_left">11:31AM</p>
+              <img class="checksign" src={Check}></img> 
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="send_message">
+        <div class="flex_left" id="message_bar">
+          <button><img src={Emoji} class="favicon"></img></button>
+          <input id="comment_bar" placeholder='Start typing...'></input>
+          <button><img src={Mail} class="favicon"></img></button>
+          <button><img src={Send} class="favicon"></img></button>
+        </div> 
+      </div>
+
     </div> 
   )
 }
