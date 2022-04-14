@@ -7,7 +7,7 @@ import json
 
 
 @app.before_first_request
-def setup():
+def setup(): # Create Database if necessary
     print("Running....")
     try:
         db.create_all()
@@ -17,12 +17,12 @@ def setup():
 
 
 @app.route('/')
-def main_page():
-    return render_template('index.html')
+def index():
+    return render_template('index.html') # Sample return to html
 
 
 @app.route('/chat', methods=['GET', 'POST'])
-def chat():
+def chat(): # Function to request and get message
     if request.method == 'GET': # Request Message
         all_message = Message.query.all()
         json_string = json.dumps([ob.dump() for ob in all_message]) # Convert List of Object to Json File
@@ -45,19 +45,18 @@ def chat():
 def contact():
     # user = User.query.filter_by(...).first()
     # contact = user.contact
-    # return render_template('contact.html', contact=contact)
-    return render_template('contact.html')
+    return render_template('index.html') # Sample return to html
 
 
 @app.route('/management')
 def management():
-    return render_template('contact.html')
+    return render_template('index.html') # Sample return to html
 
 
 @app.route('/setting')
 def setting():
-    return render_template('setting.html')
+    return render_template('index.html') # Sample return to html
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
