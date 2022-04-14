@@ -54,13 +54,17 @@ The All-In-One Data Exchange Hub Across The World & Metaverse
 
 ## Proposed Features
 <img src="prototypes/features.png">
+
+## Showcase
+
+[![Click Here!](/prototypes/Helene.png)](https://www.youtube.com/watch?v=OEHn7vauGBo)	
 	
 ## UI Design Prototype
 	
 Prototype created by Figma here:
   
 https://www.figma.com/file/xAYU3f60DOKEqnng3QIKs0/UI?node-id=0%3A1
-  
+	
 ## Preproject brainstorm
 	
 Preproject brainstorm here:
@@ -71,7 +75,8 @@ https://www.figma.com/file/BR45q2QY2ViAaMXsOhp159Nc/Rappit?node-id=0%3A1
 	
 Demonstration Video here:
 
-www.youtube.com
+
+
 
 ## Idea In General
 
